@@ -1,0 +1,13 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/CommonCode/obj
+/CommonCode/bin
+/ConnectorsApi/bin/Debug/net7.0
+/ConnectorsApi/obj
+/WorkspaceMetadataService/.vs
+/WorkspaceMetadataService/bin
+/WorkspaceMetadataService/obj
+/ConnectorsApi/Dockerfile
+/WorkspaceMetadataService/Dockerfile
