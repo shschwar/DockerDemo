@@ -1,4 +1,4 @@
-# DockerDemo - C# based services used to learn Docker
+# DockerDemo - C# based services for docker training.
 
 This solution contains:
 * WorkspaceMetadataService - a microservice for internal use to get infromation regarding the workspace
