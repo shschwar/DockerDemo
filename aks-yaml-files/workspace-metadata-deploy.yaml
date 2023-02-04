@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: workspace-metadata-service
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: workspace-metadata-service
+  template:
+    metadata:
+      labels:
+        app: workspace-metadata-service
+    spec:
+      containers:
+      - name: workspace-metadata
+        image: learnkuber.azurecr.io/livedemo/workspace-metadata-service
+        ports:
+        - containerPort: 6000

@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: connectors-api
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      app: connectors-api
+  template:
+    metadata:
+      labels:
+        app: connectors-api
+    spec:
+      containers:
+      - name: connectors-api
+        image: learnkuber.azurecr.io/livedemo/connectors-api
+        ports:
+        - containerPort: 6001
+        env:
+        - name: WORKSPACE_METADATA_SERVICE_DOMAIN
+          value: workspace-metadata-service
+        - name: WORKSPACE_METADATA_SERVICE_PORT
+          value: "80"
